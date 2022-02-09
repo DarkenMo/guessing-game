@@ -23,8 +23,13 @@ def guessing():
             else:
                 break
         else:
-            print("wrong number try again!")
-            guess_count += 1
+            # checks if the guessed number is lower or higher than the generated number
+            if guess < num:
+                print("wrong number try a higher one!")
+                guess_count += 1
+            elif guess > num:
+                print("wrong number try a lower one!")
+                guess_count += 1
 
 
 print("number guesser by DarkenMo")
