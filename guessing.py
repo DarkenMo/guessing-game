@@ -22,7 +22,7 @@ def guessing():
     num = random.randint(1, 10)
     # sets the guess to nothing
     guess = None
-    guess_count = 0
+    guess_count = 1
     while guess != num:
         guess = int(input("guess a number between 1 and 10: "))
         # checks if your guess is the same as the number and if it is it prints out the things below and if its not then it will add 1 to the counter and print that it was wrong
